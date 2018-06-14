@@ -1,0 +1,280 @@
+
+/* General Styling */
+/* Sets background-color of the page to a soft grey */
+html {
+  background-color: #C7C1C1;
+}
+
+/* Gives body the white color and makes sure the page is responsive between the widths of 510 and 960 pixesl */
+body {
+  background-color: #FFFFFF;
+  min-width: 510px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Sets the fonts size for the main header and adds the image logo */
+h1 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande","Lucida Sans","Geneva","Verdana","sans-serif";
+  color: #004A85;
+  padding-left: 10px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-image: url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/sign_language.png");
+  background-repeat: no-repeat;
+	background-position: 95% 98%;
+  border-bottom: 10px solid #004A85;
+}
+
+/* Sets the font size and color for h2 headers */
+h2 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande","Lucida Sans","Geneva","Verdana","sans-serif";
+  color: #004A85;
+  padding-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+
+/* Sets the font size, font and color for h3 headers */
+h3{
+  font-family: "Lucida Sans Unicode", "Lucida Grande","Lucida Sans","Geneva","Verdana","sans-serif";
+  color: #004A85;
+  margin-left: 10px;
+}
+
+/* Sets the font size of all the paragraphs */
+p {
+  font-family: "Palatino Linotype", "Palatino","Palatino LT STD","Book Antiqua","Georgia","serif";
+  padding-left: 10px;
+}
+
+/* Sets the font size of all the lists */
+li{
+  font-family: "Palatino Linotype", "Palatino","Palatino LT STD","Book Antiqua","Georgia","serif";
+}
+
+/* Styles all the hr lines by giving them color and height */
+hr{
+  color: #004A85 !important;
+  height: 10px;
+  background-color: #004A85 !important;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+/* Navigation bar */
+/* Makes the nav go the full width of the page, sets the colour of the nav bar,
+position brings the nav bar to the top of the page  */
+#nav {
+	width: 100%;
+	height: 50px;
+	background-color: #004A85;
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: right;
+}
+
+/* Brings all of the list to the right */
+#nav ul{
+	float: right;
+}
+/* Makes all the lists go vertically instead of horizontal default */
+#nav ul li {
+	display: inline;
+}
+
+/* When the mouse is hovered over a selection in the nav the text colour turns grey */
+#nav ul li a:hover {
+	color: 	#A9A9A9;
+}
+
+/* Change the colour of the links, font size and spread them out a bit more with padding.
+text-decoration gets rid of the standard formatting such as underline that is applied to links */
+#nav ul a {
+	color: #FFFFFF;
+	font-size: 18px;
+	padding: 5px 5px;
+	text-decoration: none;
+}
+
+/* Creates the drop down menu, and gets in the right position.
+Display none makes it not appear until it is hovered over and #nav ul li:hover ul comes in */
+#nav ul li ul {
+   position: absolute;
+	 right: 0;
+	 background-color: #004A85;
+	 width: 28%;
+ 	 padding: 0;
+ 	 display: none;
+}
+
+/* Makes the drop down appear when hovered over */
+#nav ul li:hover ul {
+	 display: block;
+}
+
+/* Centers the drop downs text and positions it as a chunk */
+#nav ul li ul li {
+ 		text-align: center;
+		display: block;
+}
+
+/* Linguistics */
+/* Styles everything within the map div. Creates a border around the map */
+#map{
+    border: 15px;
+    border: 3px #004A85 double;
+    width: 45%;
+    font-size: 12px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 15px;
+    float: left;
+    width: 45%;
+}
+
+/* Positions the images within the map div */
+#map img{
+  float:left;
+}
+
+/* Positions the texts within the map div */
+#map p{
+  position: relative;
+  margin-top: 2px;
+  left: 10px
+}
+
+/* Sets the map image size */
+.map img{
+  width: 97%;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+
+/* positions the sign class center and adds a bottom border beneath it */
+.sign {
+  text-align: center;
+  border-bottom: 2px solid #004A85;
+}
+
+/* Decapitalizes and bolds the "legend" sub-title*/
+.legend{
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/* Helps to partition Linguistics into two section: map and the paragraph without distorting rest of the page */
+#linguistics:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Positions the text next to the map, on to the left side */
+#paragraph{
+  float: left;
+  width: 45%;
+}
+
+/* History */
+/* Positions the image and places it on top of the frame */
+#history img{
+  float: right;
+	background-image: url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/420x370-box.png");
+	background-repeat: no-repeat;
+  background-position: 100% 0% !important;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-left: 20px;
+  padding: 20px 20px 25px 20px;
+}
+
+/* British Sign Language */
+/* Positions the video and places it on top of the frame */
+#video{
+  float: right;
+	background-image: url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/460x320-box.png");
+	background-repeat: no-repeat;
+  background-position: 100% 0% !important;
+  padding-right: 0px;
+  margin-left: 5px;
+  margin-right: 10px;
+  padding: 10px 10px
+}
+
+/* Specifically positions the video */
+#video object{
+  margin-right: 15px;
+  margin-left: 20px;
+  margin-top: 8px;
+  position: relative; left: 1%;
+}
+
+/* Styles the informative text of the video */
+#video p{
+  font-size: 12px;
+  text-align: center;
+}
+
+/* British Sign Language: Letters and Numbers */
+/* Create a line using bottom of a border to simulate a hr element */
+#letters{
+  border-bottom: 10px solid #004A85;
+}
+
+/* Styles the parahraphs, sets color and position */
+#letters p, #numbers p{
+	padding: 3px;
+  background-color:#004A85 !important;
+  color: #FFFFFF;
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 10px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  font-size: 12px
+}
+
+/* Styles the images, sets position */
+#letters img, #numbers img{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: 10px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+/* Creates container for images to display them as a box */
+.container{
+  max-width: 960px;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* Sets the font size for the text within the container */
+.container p span{
+  font-size: 10px;
+}
+
+/* Sets color for the headers */
+.red{
+  color: #E50000;
+  display: inline;
+}
+
+/* Alligns the texts towards right, sets the font size to 12 */
+#wiki {
+  text-align: right;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-size: 12px;
+}

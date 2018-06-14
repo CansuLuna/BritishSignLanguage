@@ -1,0 +1,61 @@
+/* Sets background-color of the page to a soft grey */
+html {
+  background-color: #C7C1C1;
+}
+
+/* Gives body the white color and makes sure the page is responsive between the widths of 510 and 960 pixesl */
+body {
+  background-color: #FFFFFF;
+  min-width: 510px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Sets the fonts size for the main header and adds the image logo */
+h1 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande","Lucida Sans","Geneva","Verdana","sans-serif";
+  color: #004A85;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-image: url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/sign_language.png");
+  background-repeat: no-repeat;
+	background-position: 95% 98%;
+  border-bottom: 10px solid #004A85;
+}
+
+/* Sets the font size and color for h2 headers */
+h2 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande","Lucida Sans","Geneva","Verdana","sans-serif";
+  color: #004A85;
+  padding-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+
+/* Sets the font size of all the paragraphs */
+p {
+  font-family: "Palatino Linotype", "Palatino","Palatino LT STD","Book Antiqua","Georgia","serif";
+  padding-left: 10px;
+}
+
+/* Sets the font size of all the lists */
+li{
+  font-family: "Palatino Linotype", "Palatino","Palatino LT STD","Book Antiqua","Georgia","serif";
+}
+
+/* Alligns the texts towards right */
+#footer {
+  text-align: right;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+/* Adds and styles the border */
+fieldset{
+  border: 15px;
+  border: 3px #004A85 double;
+}
